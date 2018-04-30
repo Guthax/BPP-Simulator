@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class SettingsPanel extends JPanel {
 
@@ -8,8 +9,18 @@ public class SettingsPanel extends JPanel {
         PackagesPanel panel = new PackagesPanel();
         add(panel);
 
+        add(Box.createRigidArea(new Dimension(10, 30)));
+
         BoxSelectionPanel boxSelectionPanel = new BoxSelectionPanel();
         add(boxSelectionPanel);
+
+
+        AlgorithmSelectionPanel algorithmSelectionPanel = new AlgorithmSelectionPanel();
+        add(algorithmSelectionPanel);
+
+        SettingsButtonPanel settingsButtonPanel = new SettingsButtonPanel();
+        add(settingsButtonPanel);
+
 
     }
 }
