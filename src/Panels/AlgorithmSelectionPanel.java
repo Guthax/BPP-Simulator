@@ -1,3 +1,5 @@
+package Panels;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -14,6 +16,12 @@ public class AlgorithmSelectionPanel extends JPanel {
         JRadioButton button2 = new JRadioButton("Next fit");
 
         JRadioButton button3 = new JRadioButton("Jurrias");
+
+        ButtonGroup group = new ButtonGroup();
+        group.add(button1);
+        group.add(button2);
+        group.add(button3);
+
         add(button1);
         add(button2);
         add(button3);

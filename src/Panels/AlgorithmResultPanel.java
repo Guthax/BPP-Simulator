@@ -1,7 +1,13 @@
+package Panels;
+
+import Models.HelperClasses.SimulationHandler;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class AlgorithmResultPanel extends JPanel {
+    static boolean simulationStarted;
+    ResultBoxesPanel panel;
     public AlgorithmResultPanel()
     {
         setSize(200,200);
@@ -11,7 +17,7 @@ public class AlgorithmResultPanel extends JPanel {
         ResultStatisticsPanel resultStatisticsPanel = new ResultStatisticsPanel();
 
 
-        ResultBoxesPanel panel = new ResultBoxesPanel();
+        panel = new ResultBoxesPanel();
         JScrollPane scrollPane = new JScrollPane(panel);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
@@ -20,5 +26,6 @@ public class AlgorithmResultPanel extends JPanel {
         add(scrollPane);
         scrollPane.revalidate();
     }
+
 
 }

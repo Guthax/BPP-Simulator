@@ -1,3 +1,7 @@
+package Panels;
+
+import Models.HelperClasses.SimulationHandler;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -12,6 +16,7 @@ public class BoxSelectionPanel extends JPanel {
 
         boxLengthSelectSpinner.setSize(50,20);
         add(Box.createRigidArea(new Dimension(10, 10)));
+        boxLengthSelectSpinner.setValue(SimulationHandler.simulation.getBoxSize());
         add(boxLengthSelectSpinner);
 
     }
