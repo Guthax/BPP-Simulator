@@ -12,11 +12,14 @@ public class SimulationGui extends JFrame
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(0,2,10,10));
         setResizable(false);
+
         SettingsPanel panel = new SettingsPanel();
         add(panel);
 
         AlgorithmResultPanel algorithmResultPanel = new AlgorithmResultPanel();
 
         add(algorithmResultPanel);
+
+
     }
 }

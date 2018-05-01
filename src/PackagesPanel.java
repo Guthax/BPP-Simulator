@@ -7,6 +7,7 @@ public class PackagesPanel extends JPanel {
     JTable currentPackagesTable;
     public PackagesPanel()
     {
+        this.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black), "Packages"));
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
         String[] columnNames = {"Package", "Size"};
@@ -20,16 +21,13 @@ public class PackagesPanel extends JPanel {
 
         //currentPackagesTable.setSize(200,200);
 
-        JLabel packagesLabel = new JLabel("Packages");
         JLabel numberOfPackagesLabel = new JLabel("100/200");
         packagesButton = new JButton("Add package");
         randomPackageButton = new JButton("Random Package Selection");
 
         currentPackagesTable.setAlignmentX(Component.LEFT_ALIGNMENT);
-        packagesLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
 
         add(Box.createRigidArea(new Dimension(10, 10)));
-        add(packagesLabel);
         add(Box.createRigidArea(new Dimension(10, 10)));
         add(currentPackagesTable);
         add(numberOfPackagesLabel);

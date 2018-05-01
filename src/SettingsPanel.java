@@ -5,6 +5,7 @@ public class SettingsPanel extends JPanel {
 
     public SettingsPanel()
     {
+        this.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black), "Settings"));
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         PackagesPanel panel = new PackagesPanel();
         add(panel);

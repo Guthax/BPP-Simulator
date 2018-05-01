@@ -4,17 +4,19 @@ import java.util.Random;
 
 public class ResultBoxesPanel extends JPanel {
     public ResultBoxesPanel() {
-
-        setLayout(new GridLayout());
-        setPreferredSize(new Dimension(700, 600));
+        this.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black), "Boxes"));
+        setLayout(new BorderLayout());
+        setPreferredSize(new Dimension(5000, 300));
+        //revalidate();
     }
 
-    public void paint(Graphics g) {
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
         //Test for 3 boxes
 
 
-        int x = 0;
-        int y = 0;
+        int x = 10;
+        int y = 10;
 
         int boxwidth = 150;
         int boxheight = 200;
@@ -28,6 +30,10 @@ public class ResultBoxesPanel extends JPanel {
             x += 160;
             //y+= 205;
         }
+
+        setPreferredSize(new Dimension(x, 200));
+        revalidate();
+
 
 
     }
