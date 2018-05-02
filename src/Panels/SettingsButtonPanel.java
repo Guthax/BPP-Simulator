@@ -2,6 +2,7 @@ package Panels;
 
 import Models.HelperClasses.SimulationHandler;
 import Models.Simulation;
+import com.sun.javafx.collections.NonIterableChange;
 
 import javax.swing.*;
 import java.awt.*;
@@ -34,7 +35,7 @@ public class SettingsButtonPanel extends JPanel implements ActionListener {
             SimulationHandler.simulation.start();
             getParent().getParent().repaint();
 
-            //getParent().getParent().revalidate();
+            ResultStatisticsPanel.numberOfBoxes.setText(Integer.toString(SimulationHandler.simulation.getBoxes().size()));
 
         }
     }

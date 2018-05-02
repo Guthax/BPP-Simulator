@@ -26,6 +26,13 @@ public class ResultBoxesPanel extends JPanel {
             int green = HelperMethods.getRandom(0, 255);
             int blue = HelperMethods.getRandom(0, 255);
 
+            while(Color.getHSBColor(red,green,blue) == Color.black)
+            {
+                red = HelperMethods.getRandom(0, 255);
+                green = HelperMethods.getRandom(0, 255);
+                blue = HelperMethods.getRandom(0, 255);
+            }
+
             colors.put(i, Color.getHSBColor(red,green,blue));
         }
     }
@@ -60,14 +67,14 @@ public class ResultBoxesPanel extends JPanel {
                 for(Package p : box.getPackages())
                 {
                     g.setColor(colors.get(p.getSize()));
-                    int packageHeight = boxheight/(SimulationHandler.simulation.getBoxSize()) * p.getSize() - 10;
-                    g.fillRect(x + 3, y + previousPackageHeight + 5, packageWidth, packageHeight);
+                    int packageHeight = Math.round(200 * ((float)p.getSize()/(float)SimulationHandler.simulation.getBoxSize()));
+                    g.fillRect(x + 3, y + previousPackageHeight, packageWidth, packageHeight);
                     g.setColor(Color.blue);
-                    g.drawRect(x + 3, y + previousPackageHeight + 5, packageWidth, packageHeight);
+                    g.drawRect(x + 3, y + previousPackageHeight, packageWidth, packageHeight);
                     g.setColor(Color.black);
                     g.drawString((Integer.toString(p.getSize())), x+60, y + previousPackageHeight + (packageHeight/2));
                     g.setColor(colors.get(p.getSize()));
-                    previousPackageHeight += packageHeight;
+                    previousPackageHeight = packageHeight;
                 }
                 x += 160;
             }

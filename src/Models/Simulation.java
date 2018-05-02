@@ -16,6 +16,7 @@ public class Simulation {
         boxSize = 5;
         started = false;
         packages = new ArrayList<Package>();
+        boxes = new ArrayList<Box>();
         packages.add(new Package(2));
         packages.add(new Package(5));
         packages.add(new Package(4));
