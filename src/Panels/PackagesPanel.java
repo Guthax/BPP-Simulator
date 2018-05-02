@@ -80,10 +80,10 @@ public class PackagesPanel extends JPanel implements ActionListener {
         if(e.getSource() == randomPackageButton)
         {
             SimulationHandler.simulation.clearPackages();
-            int  n = HelperMethods.getRandom(100);
+            int  n = HelperMethods.getRandom(1,100);
             for(int i = 0; i < n; i++)
             {
-                int n2 = HelperMethods.getRandom(SimulationHandler.simulation.getBoxSize());
+                int n2 = HelperMethods.getRandom(1,SimulationHandler.simulation.getBoxSize());
                 SimulationHandler.simulation.addPackage(new Package(n2));
             }
 

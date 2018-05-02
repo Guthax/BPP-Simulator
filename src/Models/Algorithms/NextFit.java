@@ -9,18 +9,40 @@ import Models.Package;
 import java.util.ArrayList;
 
 public class NextFit extends Algorithm {
-    private String naam;
-
     public NextFit()
     {
-        this.naam = "Next fit";
+        super("Next fit");
     }
 
     @Override
     public ArrayList<Box> RunAlgorithm(int boxsize, ArrayList<Package> packages) {
         ArrayList<Box> result = new ArrayList<Box>();
         result.add(new Box());
-        int counter = 0;
+
+        for(int i = 0; i < packages.size(); i++)
+        {
+            int boxIndex;
+            if(i == 0) {
+                boxIndex = 0;
+            }
+            else
+            {
+                boxIndex = (i - 1);
+            }
+
+            if(((HelperMethods.sumOfPackageList(result.get(result.size() - 1).getPackages()) + packages.get(i).getSize()) <= SimulationHandler.simulation.getBoxSize()))
+            {
+                result.get(result.size() - 1).addPackage(packages.get(i));
+            }
+            else
+            {
+                Box b = new Box();
+                b.addPackage(packages.get(i));
+                result.add(b);
+            }
+
+        }
+        /*
         while(packages.size() > 0)
         {
             int boxIndex = counter - 1;
@@ -38,7 +60,7 @@ public class NextFit extends Algorithm {
                 result.add(b);
             }
             packages.remove(0);
-        }
+        }*/
         return result;
     }
 

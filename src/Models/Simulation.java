@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Simulation {
     private int boxSize;
     private ArrayList<Box> boxes;
-    private ArrayList<Package> packages;
+    private  ArrayList<Package> packages;
     private boolean started;
     private Algorithm algorithm;
 
@@ -25,10 +25,13 @@ public class Simulation {
     public void start()
     {
 
-        NextFit nextFit = new NextFit();
-        this.boxes = nextFit.RunAlgorithm(this.boxSize, this.packages);
-        System.out.println("test");
+        ArrayList<Package> backup = new ArrayList<Package>();
+        backup = this.packages;
+
+        this.boxes = this.algorithm.RunAlgorithm(this.boxSize, this.packages);
         started = true;
+
+        this.packages = backup;
 
     }
 
@@ -62,6 +65,11 @@ public class Simulation {
     public void clearPackages()
     {
         packages.clear();
+    }
+
+    public void setAlgorithm(Algorithm algorithm)
+    {
+        this.algorithm = algorithm;
     }
 }
 

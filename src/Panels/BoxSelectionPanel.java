@@ -3,6 +3,8 @@ package Panels;
 import Models.HelperClasses.SimulationHandler;
 
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import java.awt.*;
 
 public class BoxSelectionPanel extends JPanel {
@@ -17,6 +19,14 @@ public class BoxSelectionPanel extends JPanel {
         boxLengthSelectSpinner.setSize(50,20);
         add(Box.createRigidArea(new Dimension(10, 10)));
         boxLengthSelectSpinner.setValue(SimulationHandler.simulation.getBoxSize());
+
+        ChangeListener listener = new ChangeListener() {
+            public void stateChanged(ChangeEvent e) {
+                SimulationHandler.simulation.setBoxSize(Integer.parseInt(boxLengthSelectSpinner.getValue().toString()));
+            }
+        };
+
+        boxLengthSelectSpinner.addChangeListener(listener);
         add(boxLengthSelectSpinner);
 
     }

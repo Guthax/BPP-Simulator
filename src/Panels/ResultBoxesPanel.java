@@ -1,19 +1,33 @@
 package Panels;
 
 import Models.Box;
+import Models.HelperClasses.HelperMethods;
 import Models.HelperClasses.SimulationHandler;
 import Models.Package;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 public class ResultBoxesPanel extends JPanel {
+    Map<Integer, Color> colors = new HashMap<Integer, Color>();
+
     public ResultBoxesPanel() {
         this.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black), "Boxes"));
         setLayout(new BorderLayout());
         setPreferredSize(new Dimension(5000, 300));
         //revalidate();
+        for(int i = 0; i < SimulationHandler.simulation.getBoxSize() + 1; i++)
+        {
+
+            int red = HelperMethods.getRandom(0, 255);
+            int green = HelperMethods.getRandom(0, 255);
+            int blue = HelperMethods.getRandom(0, 255);
+
+            colors.put(i, Color.getHSBColor(red,green,blue));
+        }
     }
 
     public void paintComponent(Graphics g) {
@@ -21,6 +35,8 @@ public class ResultBoxesPanel extends JPanel {
 
         super.paintComponent(g);
         //Test for 3 boxes
+
+
 
         if(SimulationHandler.simulation.isStarted())
         {
@@ -37,15 +53,21 @@ public class ResultBoxesPanel extends JPanel {
                 g.setColor(Color.black);
                 g.drawRect(x, y, boxwidth, boxheight);
 
-                g.setColor(Color.green);
+
+                int packageWidth = boxwidth - 5;
+
+                int previousPackageHeight = 0;
                 for(Package p : box.getPackages())
                 {
-                    int packageWidth = boxwidth - 5;
-                    int packageHeight = boxheight/(SimulationHandler.simulation.getBoxSize()) * p.getSize();
-                    g.fillRect(x + 3, y + 5, boxwidth - 5, packageHeight);
-                    g.setColor(Color.black);
-                    g.drawString((Integer.toString(p.getSize())), x+50, y + (packageHeight/2));
+                    g.setColor(colors.get(p.getSize()));
+                    int packageHeight = boxheight/(SimulationHandler.simulation.getBoxSize()) * p.getSize() - 10;
+                    g.fillRect(x + 3, y + previousPackageHeight + 5, packageWidth, packageHeight);
                     g.setColor(Color.blue);
+                    g.drawRect(x + 3, y + previousPackageHeight + 5, packageWidth, packageHeight);
+                    g.setColor(Color.black);
+                    g.drawString((Integer.toString(p.getSize())), x+60, y + previousPackageHeight + (packageHeight/2));
+                    g.setColor(colors.get(p.getSize()));
+                    previousPackageHeight += packageHeight;
                 }
                 x += 160;
             }

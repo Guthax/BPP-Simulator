@@ -3,11 +3,12 @@ package Models.HelperClasses;
 import Models.Package;
 
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class HelperMethods {
-    public static int getRandom(int max){
+    public static int getRandom(int min, int max){
         // return (int) (Math.random()*max);  //incorrect always return zero
-        return (int) (Math.random()*max);
+        return ThreadLocalRandom.current().nextInt(min, max + 1);
     }
 
     public static int sumOfPackageList(ArrayList<Package> packages)

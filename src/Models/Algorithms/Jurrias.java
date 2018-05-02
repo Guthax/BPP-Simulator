@@ -11,11 +11,12 @@ public class Jurrias extends Algorithm {
 
     public Jurrias()
     {
-        this.name = "Jurrias";
+        super("Jurrias");
     }
 
     @Override
     public ArrayList<Box> RunAlgorithm(int boxsize, ArrayList<Package> packages) {
+
         return null;
     }
 

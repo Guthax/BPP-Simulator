@@ -9,7 +9,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class SimulationGui extends JFrame implements ActionListener
+public class SimulationGui extends JFrame
 {
 
     JButton startSimulationButton;
@@ -36,12 +36,4 @@ public class SimulationGui extends JFrame implements ActionListener
 
     }
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == startSimulationButton)
-        {
-            SimulationHandler.simulation.start();
-
-        }
-    }
 }
