@@ -19,22 +19,6 @@ public class ResultBoxesPanel extends JPanel {
         setLayout(new BorderLayout());
         setPreferredSize(new Dimension(5000, 300));
         //revalidate();
-        for(int i = 0; i < SimulationHandler.simulation.getBoxSize() + 1; i++)
-        {
-
-            int red = HelperMethods.getRandom(0, 255);
-            int green = HelperMethods.getRandom(0, 255);
-            int blue = HelperMethods.getRandom(0, 255);
-
-            while(Color.getHSBColor(red,green,blue) == Color.black)
-            {
-                red = HelperMethods.getRandom(0, 255);
-                green = HelperMethods.getRandom(0, 255);
-                blue = HelperMethods.getRandom(0, 255);
-            }
-
-            colors.put(i, Color.getHSBColor(red,green,blue));
-        }
     }
 
     public void paintComponent(Graphics g) {
@@ -43,7 +27,10 @@ public class ResultBoxesPanel extends JPanel {
         super.paintComponent(g);
         //Test for 3 boxes
 
-
+        if(colors.size() < SimulationHandler.simulation.getBoxSize())
+        {
+            fillColorsWithRandomValuesAccordingToBoxSize();
+        }
 
         if(SimulationHandler.simulation.isStarted())
         {
@@ -66,16 +53,19 @@ public class ResultBoxesPanel extends JPanel {
                 int previousPackageHeight = 0;
                 for(Package p : box.getPackages())
                 {
+                    g.setFont(new Font("TimesRoman", Font.PLAIN, 10));
                     g.setColor(colors.get(p.getSize()));
                     int packageHeight = Math.round(200 * ((float)p.getSize()/(float)SimulationHandler.simulation.getBoxSize()));
-                    g.fillRect(x + 3, y + previousPackageHeight, packageWidth, packageHeight);
+                    g.fillRect(x + 3, y, packageWidth, packageHeight);
                     g.setColor(Color.blue);
-                    g.drawRect(x + 3, y + previousPackageHeight, packageWidth, packageHeight);
-                    g.setColor(Color.black);
-                    g.drawString((Integer.toString(p.getSize())), x+60, y + previousPackageHeight + (packageHeight/2));
-                    g.setColor(colors.get(p.getSize()));
-                    previousPackageHeight = packageHeight;
+                    //g.drawRect(x + 3, y + previousPackageHeight, packageWidth, packageHeight);
+                    if(Math.round((float)p.getSize() / (float)SimulationHandler.simulation.getBoxSize() * 100) > 5) {
+                        //g.drawString((Integer.toString(p.getSize())), x + 65, y + previousPackageHeight + (packageHeight / 2));
+                    }
+                    g.drawString((Integer.toString(p.getSize())), x + 65, y + (packageHeight / 2));
+                    y+= packageHeight;
                 }
+                y = 20;
                 x += 160;
             }
             /*
@@ -92,5 +82,26 @@ public class ResultBoxesPanel extends JPanel {
             setPreferredSize(new Dimension(x, 200));
             revalidate();
         }
+    }
+
+    private void fillColorsWithRandomValuesAccordingToBoxSize()
+    {
+        for(int i = 0; i < SimulationHandler.simulation.getBoxSize() + 1; i++)
+        {
+
+            int red = HelperMethods.getRandom(0, 255);
+            int green = HelperMethods.getRandom(0, 255);
+            int blue = HelperMethods.getRandom(0, 255);
+
+            while(Color.getHSBColor(red,green,blue) == Color.black)
+            {
+                red = HelperMethods.getRandom(0, 255);
+                green = HelperMethods.getRandom(0, 255);
+                blue = HelperMethods.getRandom(0, 255);
+            }
+
+            colors.put(i, Color.getHSBColor(red,green,blue));
+        }
+
     }
 }
