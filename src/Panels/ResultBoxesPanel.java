@@ -39,7 +39,7 @@ public class ResultBoxesPanel extends JPanel {
             int y = 20;
 
             int boxwidth = 150;
-            int boxheight = 200;
+            int boxheight = 350;
             int packagewidth = 100;
 
             for(Box box : SimulationHandler.simulation.getBoxes())
@@ -55,8 +55,8 @@ public class ResultBoxesPanel extends JPanel {
                 {
                     g.setFont(new Font("TimesRoman", Font.PLAIN, 10));
                     g.setColor(colors.get(p.getSize()));
-                    int packageHeight = Math.round(200 * ((float)p.getSize()/(float)SimulationHandler.simulation.getBoxSize()));
-                    g.fillRect(x + 3, y, packageWidth, packageHeight);
+                    int packageHeight = Math.round(boxheight * ((float)p.getSize()/(float)SimulationHandler.simulation.getBoxSize())) - 3;
+                    g.fillRect(x + 3, y+2, packageWidth, packageHeight);
                     g.setColor(Color.blue);
                     //g.drawRect(x + 3, y + previousPackageHeight, packageWidth, packageHeight);
                     if(Math.round((float)p.getSize() / (float)SimulationHandler.simulation.getBoxSize() * 100) > 10) {

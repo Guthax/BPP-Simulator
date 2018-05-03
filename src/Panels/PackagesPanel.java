@@ -5,6 +5,7 @@ import Models.HelperClasses.PackagesTable;
 import Models.HelperClasses.SimulationHandler;
 import Models.Package;
 import Models.Simulation;
+import javafx.beans.property.SimpleListProperty;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -16,6 +17,8 @@ import java.util.Random;
 public class PackagesPanel extends JPanel implements ActionListener {
     JButton packagesButton;
     JButton randomPackageButton;
+    JButton clearPackages;
+
     JTable currentPackagesTable;
 
     JLabel numberOfPackages;
@@ -36,22 +39,15 @@ public class PackagesPanel extends JPanel implements ActionListener {
         });
 
 
-        DefaultTableModel model = (DefaultTableModel) currentPackagesTable.getModel();
-        int counter = 0;
-        for(Package packagge : SimulationHandler.simulation.getPackages())
-        {
-            model.addRow(new Object[]{counter, packagge.getSize()});
-            counter++;
-        }
+        numberOfPackages = new JLabel("");
+        updateTableAndLabelWithSimulationPackages();
 
-        model.removeRow(0);
-        //currentPackagesTable.setSize(200,200);
-
-        numberOfPackages = new JLabel(SimulationHandler.simulation.getPackages().size() + "/100");
         packagesButton = new JButton("Add package");
         packagesButton.addActionListener(this);
         randomPackageButton = new JButton("Random Package Selection");
         randomPackageButton.addActionListener(this);
+        clearPackages = new JButton("Clear package list");
+        clearPackages.addActionListener(this);
 
         currentPackagesTable.setAlignmentX(Component.LEFT_ALIGNMENT);
         add(Box.createRigidArea(new Dimension(10, 10)));
@@ -67,6 +63,9 @@ public class PackagesPanel extends JPanel implements ActionListener {
         add(packagesButton);
         add(Box.createRigidArea(new Dimension(10, 10)));
         add(randomPackageButton);
+        add(Box.createRigidArea(new Dimension(10, 10)));
+        add(clearPackages);
+
     }
 
     @Override
@@ -74,16 +73,8 @@ public class PackagesPanel extends JPanel implements ActionListener {
         if(e.getSource() == randomPackageButton)
         {
             SimulationHandler.simulation.RandomizePackages();
-            DefaultTableModel model = (DefaultTableModel) currentPackagesTable.getModel();
-            model.fireTableDataChanged();
-            model.setRowCount(0);
-            int counter = 0;
-            for(Package packagge : SimulationHandler.simulation.getPackages())
-            {
-                model.addRow(new Object[]{counter, packagge.getSize()});
-                counter++;
-            }
-            numberOfPackages.setText(SimulationHandler.simulation.getPackages().size() + "/100");
+
+            updateTableAndLabelWithSimulationPackages();
         }
 
         if(e.getSource() == packagesButton)
@@ -91,7 +82,7 @@ public class PackagesPanel extends JPanel implements ActionListener {
             SpinnerNumberModel sModel = new SpinnerNumberModel(1, 1, SimulationHandler.simulation.getBoxSize(), 1);
             JSpinner spinner = new JSpinner(sModel);
             //JOptionPane.showMessageDialog(null, spinner);
-            int option = JOptionPane.showOptionDialog(null, spinner, "Enter valid number", JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null);
+            int option = JOptionPane.showOptionDialog(null, spinner, "Add new package", JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null);
             if (option == JOptionPane.CANCEL_OPTION)
             {
 
@@ -112,5 +103,25 @@ public class PackagesPanel extends JPanel implements ActionListener {
                 // user entered a number
             }
         }
+
+        if(e.getSource() == clearPackages)
+        {
+            SimulationHandler.simulation.clearPackages();
+            updateTableAndLabelWithSimulationPackages();
+        }
+    }
+
+    public void updateTableAndLabelWithSimulationPackages()
+    {
+        DefaultTableModel model = (DefaultTableModel) currentPackagesTable.getModel();
+        model.fireTableDataChanged();
+        model.setRowCount(0);
+        int counter = 0;
+        for(Package packagge : SimulationHandler.simulation.getPackages())
+        {
+            model.addRow(new Object[]{counter, packagge.getSize()});
+            counter++;
+        }
+        numberOfPackages.setText(SimulationHandler.simulation.getPackages().size() + "/100");
     }
 }

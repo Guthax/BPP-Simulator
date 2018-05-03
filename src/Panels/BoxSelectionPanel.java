@@ -1,6 +1,7 @@
 package Panels;
 
 import Models.HelperClasses.SimulationHandler;
+import com.sun.xml.internal.ws.api.Component;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -28,7 +29,10 @@ public class BoxSelectionPanel extends JPanel {
                 {
                     SimulationHandler.simulation.setBoxSize(Integer.parseInt(boxLengthSelectSpinner.getValue().toString()));
                     SimulationHandler.simulation.RandomizePackages();
-                    getParent().repaint();
+
+                    java.awt.Component[] components = getParent().getComponents();
+                    PackagesPanel x = (PackagesPanel)components[0];
+                    x.updateTableAndLabelWithSimulationPackages();
                 }
                 SimulationHandler.simulation.setBoxSize(Integer.parseInt(boxLengthSelectSpinner.getValue().toString()));
             }
