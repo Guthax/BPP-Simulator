@@ -30,11 +30,15 @@ public class WorstFit extends Algorithm {
         long duration = TimeUnit.MICROSECONDS.convert(endTime - startTime, TimeUnit.NANOSECONDS);//In milliseconds
         SimulationHandler.simulation.getLog().addEvent(new Event("Created first box", duration, EventType.Step));
 
+        packages.sort(Comparator.comparing(Package::getSize));
+        Collections.reverse(packages);
+
         for(int i = 0; i < packages.size(); i++)
         {
 
             startTime = System.nanoTime();
             result.sort(Comparator.comparing(Box::getSumOfPackages));
+            Collections.reverse(result);
             endTime = System.nanoTime();
             duration = TimeUnit.MICROSECONDS.convert(endTime - startTime, TimeUnit.NANOSECONDS);//In
 

@@ -31,14 +31,7 @@ public class PackagesPanel extends JPanel implements ActionListener {
 
             @Override
             public boolean isCellEditable(int row, int column) {
-                if(column == 1)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return false;
             }
         });
 
@@ -80,14 +73,7 @@ public class PackagesPanel extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == randomPackageButton)
         {
-            SimulationHandler.simulation.clearPackages();
-            int  n = HelperMethods.getRandom(1,100);
-            for(int i = 0; i < n; i++)
-            {
-                int n2 = HelperMethods.getRandom(1,SimulationHandler.simulation.getBoxSize());
-                SimulationHandler.simulation.addPackage(new Package(n2));
-            }
-
+            SimulationHandler.simulation.RandomizePackages();
             DefaultTableModel model = (DefaultTableModel) currentPackagesTable.getModel();
             model.fireTableDataChanged();
             model.setRowCount(0);

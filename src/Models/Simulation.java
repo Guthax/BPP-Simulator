@@ -1,6 +1,8 @@
 package Models;
 
 import Models.Algorithms.NextFit;
+import Models.HelperClasses.HelperMethods;
+import Models.HelperClasses.SimulationHandler;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -49,13 +51,9 @@ public class Simulation {
     public void start()
     {
 
-        ArrayList<Package> backup = new ArrayList<Package>();
-        backup = this.packages;
 
         this.boxes = this.algorithm.RunAlgorithm(this.boxSize, this.packages);
         started = true;
-
-        this.packages = backup;
 
     }
 
@@ -103,6 +101,18 @@ public class Simulation {
     public Log getLog()
     {
         return log;
+    }
+
+    public void RandomizePackages()
+    {
+        clearPackages();
+        int  n = HelperMethods.getRandom(1,100);
+        for(int i = 0; i < n; i++)
+        {
+            int n2 = HelperMethods.getRandom(1,getBoxSize());
+            addPackage(new Package(n2));
+        }
+
     }
 }
 

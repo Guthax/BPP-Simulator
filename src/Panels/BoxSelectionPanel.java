@@ -24,6 +24,12 @@ public class BoxSelectionPanel extends JPanel {
 
         ChangeListener listener = new ChangeListener() {
             public void stateChanged(ChangeEvent e) {
+                if(SimulationHandler.simulation.getBoxSize() > Integer.parseInt(boxLengthSelectSpinner.getValue().toString()))
+                {
+                    SimulationHandler.simulation.setBoxSize(Integer.parseInt(boxLengthSelectSpinner.getValue().toString()));
+                    SimulationHandler.simulation.RandomizePackages();
+                    getParent().repaint();
+                }
                 SimulationHandler.simulation.setBoxSize(Integer.parseInt(boxLengthSelectSpinner.getValue().toString()));
             }
         };
