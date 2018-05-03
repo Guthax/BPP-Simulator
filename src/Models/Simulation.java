@@ -2,14 +2,18 @@ package Models;
 
 import Models.Algorithms.NextFit;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Simulation {
+    private String code;
     private int boxSize;
     private ArrayList<Box> boxes;
     private  ArrayList<Package> packages;
     private boolean started;
     private Algorithm algorithm;
+    private Log log;
 
     public Simulation()
     {
@@ -21,6 +25,25 @@ public class Simulation {
         packages.add(new Package(5));
         packages.add(new Package(4));
         packages.add(new Package(1));
+        log = new Log();
+        generateCode();
+
+
+    }
+
+    public void reset()
+    {
+        log = new Log();
+
+    }
+
+    public String getCode()
+    {
+        return this.code;
+    }
+    public void generateCode()
+    {
+        this.code = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date());
     }
 
     public void start()
@@ -68,9 +91,18 @@ public class Simulation {
         packages.clear();
     }
 
+    public Algorithm getAlgorithm()
+    {
+        return this.algorithm;
+    }
     public void setAlgorithm(Algorithm algorithm)
     {
         this.algorithm = algorithm;
+    }
+
+    public Log getLog()
+    {
+        return log;
     }
 }
 

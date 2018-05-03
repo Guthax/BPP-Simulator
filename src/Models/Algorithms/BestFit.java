@@ -15,6 +15,7 @@ public class BestFit extends Algorithm {
 
     @Override
     public ArrayList<Box> RunAlgorithm(int boxsize, ArrayList<Package> packages) {
+
         return null;
     }
 }

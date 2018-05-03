@@ -56,6 +56,7 @@ public class PackagesPanel extends JPanel implements ActionListener {
 
         numberOfPackages = new JLabel(SimulationHandler.simulation.getPackages().size() + "/100");
         packagesButton = new JButton("Add package");
+        packagesButton.addActionListener(this);
         randomPackageButton = new JButton("Random Package Selection");
         randomPackageButton.addActionListener(this);
 
@@ -97,6 +98,33 @@ public class PackagesPanel extends JPanel implements ActionListener {
                 counter++;
             }
             numberOfPackages.setText(SimulationHandler.simulation.getPackages().size() + "/100");
+        }
+
+        if(e.getSource() == packagesButton)
+        {
+            SpinnerNumberModel sModel = new SpinnerNumberModel(1, 1, SimulationHandler.simulation.getBoxSize(), 1);
+            JSpinner spinner = new JSpinner(sModel);
+            //JOptionPane.showMessageDialog(null, spinner);
+            int option = JOptionPane.showOptionDialog(null, spinner, "Enter valid number", JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null);
+            if (option == JOptionPane.CANCEL_OPTION)
+            {
+
+                // user hit cancel
+            } else if (option == JOptionPane.OK_OPTION)
+            {
+                SimulationHandler.simulation.addPackage(new Package(Integer.parseInt(spinner.getValue().toString())));
+                DefaultTableModel model = (DefaultTableModel) currentPackagesTable.getModel();
+                model.fireTableDataChanged();
+                model.setRowCount(0);
+                int counter = 0;
+                for(Package packagge : SimulationHandler.simulation.getPackages())
+                {
+                    model.addRow(new Object[]{counter, packagge.getSize()});
+                    counter++;
+                }
+                numberOfPackages.setText(SimulationHandler.simulation.getPackages().size() + "/100");
+                // user entered a number
+            }
         }
     }
 }

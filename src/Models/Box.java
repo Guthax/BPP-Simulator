@@ -1,5 +1,7 @@
 package Models;
 
+import Models.HelperClasses.HelperMethods;
+
 import java.util.ArrayList;
 
 public class Box {
@@ -18,5 +20,10 @@ public class Box {
     public void addPackage(Package p)
     {
         packages.add(p);
+    }
+
+    public int getSumOfPackages()
+    {
+        return HelperMethods.sumOfPackageList(this.packages);
     }
 }

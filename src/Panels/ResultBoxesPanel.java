@@ -59,7 +59,7 @@ public class ResultBoxesPanel extends JPanel {
                     g.fillRect(x + 3, y, packageWidth, packageHeight);
                     g.setColor(Color.blue);
                     //g.drawRect(x + 3, y + previousPackageHeight, packageWidth, packageHeight);
-                    if(Math.round((float)p.getSize() / (float)SimulationHandler.simulation.getBoxSize() * 100) > 5) {
+                    if(Math.round((float)p.getSize() / (float)SimulationHandler.simulation.getBoxSize() * 100) > 10) {
                         //g.drawString((Integer.toString(p.getSize())), x + 65, y + previousPackageHeight + (packageHeight / 2));
                     }
                     g.drawString((Integer.toString(p.getSize())), x + 65, y + (packageHeight / 2));

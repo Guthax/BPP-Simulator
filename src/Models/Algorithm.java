@@ -1,9 +1,6 @@
 package Models;
 
-import Models.Algorithms.BestFit;
-import Models.Algorithms.FirstFit;
-import Models.Algorithms.Jurrias;
-import Models.Algorithms.NextFit;
+import Models.Algorithms.*;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -26,9 +23,11 @@ public abstract class Algorithm {
         NextFit nextFit = new NextFit();
         BestFit bestFit = new BestFit();
         Jurrias jurrias = new Jurrias();
+        WorstFit worstFit = new WorstFit();
         algorithms.add(firstFit);
         algorithms.add(nextFit);
         algorithms.add(bestFit);
+        algorithms.add(worstFit);
         algorithms.add(jurrias);
 
         return algorithms;

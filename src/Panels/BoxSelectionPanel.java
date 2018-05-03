@@ -13,7 +13,9 @@ public class BoxSelectionPanel extends JPanel {
     {
         this.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black), "Box size"));
         setLayout(new FlowLayout(FlowLayout.LEFT));
-        boxLengthSelectSpinner = new JSpinner();
+        SpinnerNumberModel sModel = new SpinnerNumberModel(1, 1, 20, 1);
+
+        boxLengthSelectSpinner = new JSpinner(sModel);
         setMaximumSize(new Dimension(500,50));
 
         boxLengthSelectSpinner.setSize(50,20);
