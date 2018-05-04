@@ -68,17 +68,7 @@ public class ResultBoxesPanel extends JPanel {
                 y = 20;
                 x += 160;
             }
-            /*
-            for (int i = 0; i < 30; i++) {
-                g.setColor(Color.black);
-                g.drawRect(x, y, boxwidth, boxheight);
 
-
-                g.fillRect(x + 3, y + 5, boxwidth - 5, boxheight - 30);
-                x += 160;
-                //y+= 205;
-            }
-*/
             setPreferredSize(new Dimension(x, 200));
             revalidate();
         }
