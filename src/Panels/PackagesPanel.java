@@ -1,18 +1,13 @@
 package Panels;
 
-import Models.HelperClasses.HelperMethods;
-import Models.HelperClasses.PackagesTable;
 import Models.HelperClasses.SimulationHandler;
 import Models.Package;
-import Models.Simulation;
-import javafx.beans.property.SimpleListProperty;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Random;
 
 public class PackagesPanel extends JPanel implements ActionListener {
     JButton packagesButton;
@@ -39,9 +34,11 @@ public class PackagesPanel extends JPanel implements ActionListener {
         });
 
 
+        //Updates table with packages
         numberOfPackages = new JLabel("");
         updateTableAndLabelWithSimulationPackages();
 
+        //Intializes buttons
         packagesButton = new JButton("Add package");
         packagesButton.addActionListener(this);
         randomPackageButton = new JButton("Random Package Selection");
@@ -53,12 +50,10 @@ public class PackagesPanel extends JPanel implements ActionListener {
         add(Box.createRigidArea(new Dimension(10, 10)));
         add(Box.createRigidArea(new Dimension(10, 10)));
 
+        //Adds scrolplane to table so scrolling is possible
         add(new JScrollPane(currentPackagesTable));
-        //add(currentPackagesTable);
         add(numberOfPackages);
 
-        //add(currentPackagesTable.getTableHeader(), BorderLayout.AFTER_LINE_ENDS);
-        //add(currentPackagesTable, BorderLayout.AFTER_LINE_ENDS);
         add(Box.createRigidArea(new Dimension(10, 10)));
         add(packagesButton);
         add(Box.createRigidArea(new Dimension(10, 10)));
@@ -79,34 +74,24 @@ public class PackagesPanel extends JPanel implements ActionListener {
 
         if(e.getSource() == packagesButton)
         {
+            //Opens dialog for new package
             SpinnerNumberModel sModel = new SpinnerNumberModel(1, 1, SimulationHandler.simulation.getBoxSize(), 1);
             JSpinner spinner = new JSpinner(sModel);
-            //JOptionPane.showMessageDialog(null, spinner);
             int option = JOptionPane.showOptionDialog(null, spinner, "Add new package", JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null);
-            if (option == JOptionPane.CANCEL_OPTION)
+            if (option == JOptionPane.OK_OPTION)
             {
-
-                // user hit cancel
-            } else if (option == JOptionPane.OK_OPTION)
-            {
+                //Adds package to simulation packages
                 SimulationHandler.simulation.addPackage(new Package(Integer.parseInt(spinner.getValue().toString())));
-                DefaultTableModel model = (DefaultTableModel) currentPackagesTable.getModel();
-                model.fireTableDataChanged();
-                model.setRowCount(0);
-                int counter = 0;
-                for(Package packagge : SimulationHandler.simulation.getPackages())
-                {
-                    model.addRow(new Object[]{counter, packagge.getSize()});
-                    counter++;
-                }
-                numberOfPackages.setText(SimulationHandler.simulation.getPackages().size() + "/100");
-                // user entered a number
+                //Updates table
+                updateTableAndLabelWithSimulationPackages();
             }
         }
 
         if(e.getSource() == clearPackages)
         {
+            //Clears packages
             SimulationHandler.simulation.clearPackages();
+            //Updates table
             updateTableAndLabelWithSimulationPackages();
         }
     }
@@ -117,11 +102,21 @@ public class PackagesPanel extends JPanel implements ActionListener {
         model.fireTableDataChanged();
         model.setRowCount(0);
         int counter = 0;
+        //Get packages and update table
         for(Package packagge : SimulationHandler.simulation.getPackages())
         {
             model.addRow(new Object[]{counter, packagge.getSize()});
             counter++;
         }
+        //Updates label underneath table
         numberOfPackages.setText(SimulationHandler.simulation.getPackages().size() + "/100");
+
+        //If  packages > 0 then call method to disable jurrias radiobutton
+        if(getParent() != null) {
+            AlgorithmSelectionPanel x = ((AlgorithmSelectionPanel) getParent().getComponents()[3]);
+            if (x != null) {
+                x.updateJurriasButtonAccordingToPackages();
+            }
+        }
     }
 }

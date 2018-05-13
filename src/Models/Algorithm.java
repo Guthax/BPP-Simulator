@@ -7,14 +7,18 @@ import java.util.ArrayList;
 
 public abstract class Algorithm {
     private String name;
-
+    private String description;
+    //Constructor takes name
     public Algorithm(String name)
     {
         this.name = name;
 
     }
+
+    //Runs the algorithm, needs to be overridden in every classes inheriting from Algorithm
     public abstract ArrayList<Box> RunAlgorithm(int boxsize, ArrayList<Package> packages);
 
+    //Returns all algoritihms which are inheriting from Algorithm
     public static ArrayList<Algorithm> initalizeAlgorthms()
     {
         ArrayList<Algorithm> algorithms = new ArrayList<Algorithm>();
@@ -33,6 +37,7 @@ public abstract class Algorithm {
         return algorithms;
     }
 
+    //returns name of the algorithm
     public String getName()
     {
         return name;

@@ -18,6 +18,7 @@ public class SettingsPanel extends JPanel {
 
         add(Box.createRigidArea(new Dimension(10, 30)));
 
+        //Adds setting panels
         BoxSelectionPanel boxSelectionPanel = new BoxSelectionPanel();
         add(boxSelectionPanel);
 

@@ -5,6 +5,7 @@ public class Event {
     private long time;
     private EventType type;
 
+    //Initializes attributes
     public Event(String description, long time, EventType type)
     {
         this.description = description;
@@ -12,16 +13,19 @@ public class Event {
         this.type = type;
     }
 
+    //Returns event description
     public String getDescription()
     {
         return this.description;
     }
 
+    //Returns event time
     public Long getTime()
     {
         return this.time;
     }
 
+    //Returns event type
     public EventType getType() {
         return type;
     }

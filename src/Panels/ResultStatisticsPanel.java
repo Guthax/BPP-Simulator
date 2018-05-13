@@ -9,6 +9,7 @@ public class ResultStatisticsPanel extends JPanel {
     static JLabel numberOfBoxes;
     public ResultStatisticsPanel()
     {
+        //Adds label with amount of boxes used
         this.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black), "Statistics"));
         this.setMaximumSize(new Dimension(600,50));
         setLayout(new FlowLayout(FlowLayout.CENTER));

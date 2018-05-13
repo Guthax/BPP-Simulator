@@ -18,14 +18,12 @@ public class ResultBoxesPanel extends JPanel {
         this.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black), "Boxes"));
         setLayout(new BorderLayout());
         setPreferredSize(new Dimension(5000, 300));
-        //revalidate();
     }
 
     public void paintComponent(Graphics g) {
 
 
         super.paintComponent(g);
-        //Test for 3 boxes
 
         if(colors.size() < SimulationHandler.simulation.getBoxSize())
         {
@@ -76,6 +74,7 @@ public class ResultBoxesPanel extends JPanel {
 
     private void fillColorsWithRandomValuesAccordingToBoxSize()
     {
+        //Gets a random RGB value for every packagesize
         for(int i = 0; i < SimulationHandler.simulation.getBoxSize() + 1; i++)
         {
 

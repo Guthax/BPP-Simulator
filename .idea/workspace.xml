@@ -1,8 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="BPP-Simulator:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="18079c4e-f727-44ff-aaf2-5a70cc95659c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Dialogs/AddPackageDialog.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Frames/LogFrame.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Frames/LogFrame.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Main.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Main.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/Algorithm.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/Algorithm.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/Box.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/Box.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/Event.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/Event.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/HelperClasses/HelperMethods.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/HelperClasses/HelperMethods.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/HelperClasses/PackagesTable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/HelperClasses/SimulationHandler.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/HelperClasses/SimulationHandler.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/Log.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/Log.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/Package.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/Package.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/Simulation.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Models/Simulation.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/AlgorithmResultPanel.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/AlgorithmResultPanel.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/AlgorithmSelectionPanel$1.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/AlgorithmSelectionPanel$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/AlgorithmSelectionPanel.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/AlgorithmSelectionPanel.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/BoxSelectionPanel$1.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/BoxSelectionPanel$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/BoxSelectionPanel.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/BoxSelectionPanel.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/PackagesPanel$1.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/PackagesPanel$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/PackagesPanel.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/PackagesPanel.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/ResultBoxesPanel.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/ResultBoxesPanel.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/ResultStatisticsPanel.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/ResultStatisticsPanel.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/SettingsButtonPanel.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/SettingsButtonPanel.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/SettingsPanel.class" afterPath="$PROJECT_DIR$/out/production/BPP-Simulator/Panels/SettingsPanel.class" />
+      <change beforePath="$PROJECT_DIR$/src/Dialogs/AddPackageDialog.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Frames/LogFrame.java" afterPath="$PROJECT_DIR$/src/Frames/LogFrame.java" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Algorithm.java" afterPath="$PROJECT_DIR$/src/Models/Algorithm.java" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Box.java" afterPath="$PROJECT_DIR$/src/Models/Box.java" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Event.java" afterPath="$PROJECT_DIR$/src/Models/Event.java" />
+      <change beforePath="$PROJECT_DIR$/src/Models/HelperClasses/HelperMethods.java" afterPath="$PROJECT_DIR$/src/Models/HelperClasses/HelperMethods.java" />
+      <change beforePath="$PROJECT_DIR$/src/Models/HelperClasses/PackagesTable.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Models/HelperClasses/SimulationHandler.java" afterPath="$PROJECT_DIR$/src/Models/HelperClasses/SimulationHandler.java" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Log.java" afterPath="$PROJECT_DIR$/src/Models/Log.java" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Package.java" afterPath="$PROJECT_DIR$/src/Models/Package.java" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Simulation.java" afterPath="$PROJECT_DIR$/src/Models/Simulation.java" />
+      <change beforePath="$PROJECT_DIR$/src/Panels/AlgorithmResultPanel.java" afterPath="$PROJECT_DIR$/src/Panels/AlgorithmResultPanel.java" />
+      <change beforePath="$PROJECT_DIR$/src/Panels/AlgorithmSelectionPanel.java" afterPath="$PROJECT_DIR$/src/Panels/AlgorithmSelectionPanel.java" />
+      <change beforePath="$PROJECT_DIR$/src/Panels/BoxSelectionPanel.java" afterPath="$PROJECT_DIR$/src/Panels/BoxSelectionPanel.java" />
+      <change beforePath="$PROJECT_DIR$/src/Panels/PackagesPanel.java" afterPath="$PROJECT_DIR$/src/Panels/PackagesPanel.java" />
       <change beforePath="$PROJECT_DIR$/src/Panels/ResultBoxesPanel.java" afterPath="$PROJECT_DIR$/src/Panels/ResultBoxesPanel.java" />
+      <change beforePath="$PROJECT_DIR$/src/Panels/ResultStatisticsPanel.java" afterPath="$PROJECT_DIR$/src/Panels/ResultStatisticsPanel.java" />
+      <change beforePath="$PROJECT_DIR$/src/Panels/SettingsButtonPanel.java" afterPath="$PROJECT_DIR$/src/Panels/SettingsButtonPanel.java" />
+      <change beforePath="$PROJECT_DIR$/src/Panels/SettingsPanel.java" afterPath="$PROJECT_DIR$/src/Panels/SettingsPanel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,35 +61,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/BPP_Simulator$Main.coverage" NAME="Main Coverage Results" MODIFIED="1525284128279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/BPP_Simulator$Main.coverage" NAME="Main Coverage Results" MODIFIED="1526037882388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="D:\Projecten\BPP-Simulator\exportToHTML" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ResultBoxesPanel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Panels/ResultBoxesPanel.java">
+      <file leaf-file-name="BestFit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Models/Algorithms/BestFit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+            <state relative-caret-position="1037">
+              <caret line="71" column="44" lean-forward="false" selection-start-line="71" selection-start-column="44" selection-end-line="71" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Package.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Models/Package.java">
+      <file leaf-file-name="Jurrias.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Models/Algorithms/Jurrias.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlgorithmSelectionPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Panels/AlgorithmSelectionPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+            <state relative-caret-position="199">
+              <caret line="88" column="30" lean-forward="false" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -50,22 +91,12 @@
       <file leaf-file-name="Algorithm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Models/Algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+            <state relative-caret-position="102">
+              <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
               <folding>
-                <element signature="e#945#946#0" expanded="true" />
-                <element signature="e#972#973#0" expanded="true" />
+                <element signature="e#1169#1170#0" expanded="true" />
+                <element signature="e#1196#1197#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultStatisticsPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Panels/ResultStatisticsPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -73,78 +104,78 @@
       <file leaf-file-name="Simulation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Models/Simulation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="425">
+              <caret line="140" column="24" lean-forward="false" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
-                <element signature="e#926#927#0" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
-                <element signature="e#1007#1008#0" expanded="true" />
-                <element signature="e#1047#1048#0" expanded="true" />
-                <element signature="e#1075#1076#0" expanded="true" />
-                <element signature="e#1123#1124#0" expanded="true" />
-                <element signature="e#1162#1163#0" expanded="true" />
-                <element signature="e#1209#1210#0" expanded="true" />
-                <element signature="e#1240#1241#0" expanded="true" />
-                <element signature="e#1278#1279#0" expanded="true" />
-                <element signature="e#1308#1309#0" expanded="true" />
-                <element signature="e#1347#1348#0" expanded="true" />
-                <element signature="e#1379#1380#0" expanded="true" />
-                <element signature="e#1436#1437#0" expanded="true" />
-                <element signature="e#1478#1479#0" expanded="true" />
+                <element signature="e#2219#2220#0" expanded="true" />
+                <element signature="e#2247#2248#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingsButtonPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Panels/SettingsButtonPanel.java">
+      <file leaf-file-name="Package.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Models/Package.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="20" column="69" lean-forward="false" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+            <state relative-caret-position="153">
+              <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Box.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Models/Box.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Event.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Models/Event.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Log.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Models/Log.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#352#353#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimulationGui.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SimulationGui.java">
+      <file leaf-file-name="LogFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Frames/LogFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FirstFit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Models/Algorithms/FirstFit.java">
+      <file leaf-file-name="HelperMethods.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Models/HelperClasses/HelperMethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            <state relative-caret-position="102">
+              <caret line="9" column="50" lean-forward="false" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NextFit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Models/Algorithms/NextFit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="30" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#281#282#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,27 +210,30 @@
         <option value="$PROJECT_DIR$/src/ResultBoxesPanel.java" />
         <option value="$PROJECT_DIR$/src/ResultStatisticsPanel.java" />
         <option value="$PROJECT_DIR$/src/Models/Product.java" />
-        <option value="$PROJECT_DIR$/src/Models/Package.java" />
         <option value="$PROJECT_DIR$/src/Models/HelperClasses/PackagesTable.java" />
-        <option value="$PROJECT_DIR$/src/Models/HelperClasses/SimulationHandler.java" />
-        <option value="$PROJECT_DIR$/src/Models/Box.java" />
-        <option value="$PROJECT_DIR$/src/Panels/SettingsPanel.java" />
-        <option value="$PROJECT_DIR$/src/Panels/AlgorithmResultPanel.java" />
-        <option value="$PROJECT_DIR$/src/Models/HelperClasses/HelperMethods.java" />
-        <option value="$PROJECT_DIR$/src/Panels/PackagesPanel.java" />
         <option value="$PROJECT_DIR$/src/SimulationGui.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Panels/BoxSelectionPanel.java" />
         <option value="$PROJECT_DIR$/src/Models/Algorithms/NextFit.java" />
         <option value="$PROJECT_DIR$/src/Models/Algorithms/BestFit.java" />
-        <option value="$PROJECT_DIR$/src/Panels/AlgorithmSelectionPanel.java" />
-        <option value="$PROJECT_DIR$/src/Models/Algorithms/Jurrias.java" />
-        <option value="$PROJECT_DIR$/src/Models/Algorithm.java" />
         <option value="$PROJECT_DIR$/src/Models/Algorithms/FirstFit.java" />
+        <option value="$PROJECT_DIR$/src/Models/Algorithms/Jurrias.java" />
         <option value="$PROJECT_DIR$/src/Models/Simulation.java" />
+        <option value="$PROJECT_DIR$/src/Models/HelperClasses/HelperMethods.java" />
+        <option value="$PROJECT_DIR$/src/Models/HelperClasses/SimulationHandler.java" />
+        <option value="$PROJECT_DIR$/src/Models/Box.java" />
+        <option value="$PROJECT_DIR$/src/Models/Event.java" />
+        <option value="$PROJECT_DIR$/src/Models/Package.java" />
+        <option value="$PROJECT_DIR$/src/Panels/AlgorithmResultPanel.java" />
+        <option value="$PROJECT_DIR$/src/Panels/AlgorithmSelectionPanel.java" />
+        <option value="$PROJECT_DIR$/src/Panels/BoxSelectionPanel.java" />
+        <option value="$PROJECT_DIR$/src/Panels/ResultBoxesPanel.java" />
         <option value="$PROJECT_DIR$/src/Panels/ResultStatisticsPanel.java" />
         <option value="$PROJECT_DIR$/src/Panels/SettingsButtonPanel.java" />
-        <option value="$PROJECT_DIR$/src/Panels/ResultBoxesPanel.java" />
+        <option value="$PROJECT_DIR$/src/Panels/SettingsPanel.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Panels/PackagesPanel.java" />
+        <option value="$PROJECT_DIR$/src/Models/Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/Models/Log.java" />
+        <option value="$PROJECT_DIR$/src/Frames/LogFrame.java" />
       </list>
     </option>
   </component>
@@ -210,10 +244,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="63" />
-    <option name="y" value="26" />
+    <option name="x" value="284" />
+    <option name="y" value="96" />
     <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="height" value="693" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -233,8 +267,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,6 +281,12 @@
               <item name="BPP-Simulator" type="b2602c69:ProjectViewProjectNode" />
               <item name="BPP-Simulator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BPP-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BPP-Simulator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Frames" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BPP-Simulator" type="b2602c69:ProjectViewProjectNode" />
@@ -277,8 +318,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,9 +326,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -422,42 +463,53 @@
       <workItem from="1525159133376" duration="22823000" />
       <workItem from="1525246113384" duration="17906000" />
       <workItem from="1525283667102" duration="5176000" />
+      <workItem from="1525380702309" duration="867000" />
+      <workItem from="1525609187747" duration="19847000" />
+      <workItem from="1525722411450" duration="907000" />
+      <workItem from="1525891818391" duration="52000" />
+      <workItem from="1526031413760" duration="7688000" />
+      <workItem from="1526042696279" duration="622000" />
+      <workItem from="1526116358895" duration="4869000" />
+      <workItem from="1526121493722" duration="2612000" />
+      <workItem from="1526210783313" duration="4354000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66010000" />
+    <option name="totallyTimeSpent" value="107828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19746569" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19218585" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2484375" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915523" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40753424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,11 +523,29 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="85" />
+      <option name="time" value="195" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="combinationsOfNumbers" language="JAVA" />
+        <watch expression="result" />
+        <watch expression="group.getElements()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>group.getElements()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>combinationsOfNumbers</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="breakpointLogExpression">
       <expression>
         <expression-string>ResultBoxesPanel panel = new ResultBoxesPanel();
@@ -487,6 +557,16 @@
       </expression>
     </expressions>
     <expressions id="setValue">
+      <expression>
+        <expression-string>2</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>0</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>100</expression-string>
         <language-id>JAVA</language-id>
@@ -524,8 +604,8 @@
         <state relative-caret-position="272">
           <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
           <folding>
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -544,22 +624,8 @@
           <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1162#1163#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1240#1241#0" expanded="true" />
-            <element signature="e#1278#1279#0" expanded="true" />
-            <element signature="e#1308#1309#0" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1478#1479#0" expanded="true" />
+            <element signature="e#2219#2220#0" expanded="true" />
+            <element signature="e#2247#2248#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -568,9 +634,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="20" column="69" lean-forward="true" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -579,7 +643,7 @@
         <state relative-caret-position="459">
           <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -589,9 +653,7 @@
         <state relative-caret-position="136">
           <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -601,9 +663,7 @@
         <state relative-caret-position="238">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="30" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -636,9 +696,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -647,7 +705,7 @@
         <state relative-caret-position="680">
           <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -656,9 +714,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -683,7 +739,7 @@
         <state relative-caret-position="68">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -706,9 +762,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -719,78 +773,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Box.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/HelperClasses/HelperMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Panels/SettingsPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Panels/AlgorithmResultPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/ArrayList.java" />
-    <entry file="file://$PROJECT_DIR$/src/Panels/PackagesPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="71" column="56" lean-forward="true" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/HelperClasses/PackagesTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Panels/BoxSelectionPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="20" column="83" lean-forward="false" selection-start-line="20" selection-start-column="83" selection-end-line="20" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/HelperClasses/SimulationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Algorithms/BestFit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/Algorithms/WorstFit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -798,60 +781,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Algorithms/Jurrias.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-          <folding>
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/Algorithms/NextFit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="391">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Algorithms/FirstFit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Panels/ResultStatisticsPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,67 +796,202 @@
         <state relative-caret-position="459">
           <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Panels/SettingsButtonPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/Models/Algorithms/FirstFit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="69" lean-forward="false" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+        <state relative-caret-position="459">
+          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Package.java">
+    <entry file="file://$PROJECT_DIR$/src/Dialogs/AddPackageDialog.java" />
+    <entry file="file://$PROJECT_DIR$/src/Models/HelperClasses/PackagesTable.java" />
+    <entry file="file://$PROJECT_DIR$/src/Models/HelperClasses/SimulationHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="102">
+          <caret line="6" column="66" lean-forward="true" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Simulation.java">
+    <entry file="file://$PROJECT_DIR$/src/Panels/AlgorithmResultPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1162#1163#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1240#1241#0" expanded="true" />
-            <element signature="e#1278#1279#0" expanded="true" />
-            <element signature="e#1308#1309#0" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1478#1479#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="476">
+          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Panels/AlgorithmSelectionPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="1462">
+          <caret line="96" column="78" lean-forward="false" selection-start-line="96" selection-start-column="78" selection-end-line="96" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Panels/BoxSelectionPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Panels/ResultBoxesPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+        <state relative-caret-position="1139">
+          <caret line="76" column="55" lean-forward="false" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Panels/ResultStatisticsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Panels/SettingsButtonPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="69" column="48" lean-forward="false" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Panels/SettingsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/EventType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Panels/PackagesPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="60" column="40" lean-forward="false" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/Algorithms/BestFit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="71" column="44" lean-forward="false" selection-start-line="71" selection-start-column="44" selection-end-line="71" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/Algorithms/Jurrias.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="88" column="30" lean-forward="false" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/Box.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/Package.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/Simulation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="140" column="24" lean-forward="false" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2219#2220#0" expanded="true" />
+            <element signature="e#2247#2248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/HelperClasses/HelperMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="50" lean-forward="false" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+          <folding>
+            <element signature="e#326#327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frames/LogFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -931,10 +1002,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>BPP-Simulator:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

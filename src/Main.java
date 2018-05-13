@@ -11,6 +11,7 @@ public class Main {
     static Simulation simulation;
     public static void main(String[] args)
     {
+        //Create simulation GUI
         SimulationGui gui = new SimulationGui();
         gui.setVisible(true);
 

@@ -14,8 +14,8 @@ public class BoxSelectionPanel extends JPanel {
     {
         this.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black), "Box size"));
         setLayout(new FlowLayout(FlowLayout.LEFT));
+        //Set spinner to max box size to 20
         SpinnerNumberModel sModel = new SpinnerNumberModel(1, 1, 20, 1);
-
         boxLengthSelectSpinner = new JSpinner(sModel);
         setMaximumSize(new Dimension(500,50));
 
@@ -23,6 +23,8 @@ public class BoxSelectionPanel extends JPanel {
         add(Box.createRigidArea(new Dimension(10, 10)));
         boxLengthSelectSpinner.setValue(SimulationHandler.simulation.getBoxSize());
 
+        //Checks if no packages are bigger than inserted box size, if this is the case then randomize packages
+        //This is so packages are not bigger than the box
         ChangeListener listener = new ChangeListener() {
             public void stateChanged(ChangeEvent e) {
                 if(SimulationHandler.simulation.getBoxSize() > Integer.parseInt(boxLengthSelectSpinner.getValue().toString()))
