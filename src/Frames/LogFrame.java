@@ -48,11 +48,18 @@ public class LogFrame extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        //Opens file chooser so its possible to choose where the log results will be stored.
+
         JFileChooser fileChooser = new JFileChooser();
+        //Opens file chooser so its possible to choose where the log results will be stored.
         if (fileChooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION) {
             File file = fileChooser.getSelectedFile();
             try {
+                String filename = file.toString();
+                if(!filename.endsWith("txt"))
+                {
+                    filename += ".txt";
+                }
+                file = new File(filename);
                 //Convert filepath to File object
                 FileWriter fileWriter = new FileWriter(file.getAbsoluteFile());
                 PrintWriter printWriter = new PrintWriter(fileWriter);
@@ -60,10 +67,13 @@ public class LogFrame extends JFrame implements ActionListener {
                 printWriter.print(totalLog);
                 //Close the filewriter
                 printWriter.close();
+
             } catch(java.io.IOException ex) {
-                System.out.println("Error message");
+                System.out.println("Something went wrong");
             }
         }
+
+
 
     }
 }

@@ -61,6 +61,15 @@ public class PackagesPanel extends JPanel implements ActionListener {
         add(Box.createRigidArea(new Dimension(10, 10)));
         add(clearPackages);
 
+        if(SimulationHandler.simulation.getPackages().size() >= 100)
+        {
+            packagesButton.setEnabled(false);
+        }
+        else
+        {
+            packagesButton.setEnabled(true);
+        }
+
     }
 
     @Override
@@ -69,7 +78,6 @@ public class PackagesPanel extends JPanel implements ActionListener {
         {
             SimulationHandler.simulation.RandomizePackages();
 
-            updateTableAndLabelWithSimulationPackages();
         }
 
         if(e.getSource() == packagesButton)
@@ -83,7 +91,6 @@ public class PackagesPanel extends JPanel implements ActionListener {
                 //Adds package to simulation packages
                 SimulationHandler.simulation.addPackage(new Package(Integer.parseInt(spinner.getValue().toString())));
                 //Updates table
-                updateTableAndLabelWithSimulationPackages();
             }
         }
 
@@ -92,8 +99,8 @@ public class PackagesPanel extends JPanel implements ActionListener {
             //Clears packages
             SimulationHandler.simulation.clearPackages();
             //Updates table
-            updateTableAndLabelWithSimulationPackages();
         }
+        updateTableAndLabelWithSimulationPackages();
     }
 
     public void updateTableAndLabelWithSimulationPackages()
@@ -116,6 +123,14 @@ public class PackagesPanel extends JPanel implements ActionListener {
             AlgorithmSelectionPanel x = ((AlgorithmSelectionPanel) getParent().getComponents()[3]);
             if (x != null) {
                 x.updateJurriasButtonAccordingToPackages();
+            }
+        }
+
+        if(packagesButton != null) {
+            if (SimulationHandler.simulation.getPackages().size() >= 100) {
+                packagesButton.setEnabled(false);
+            } else {
+                packagesButton.setEnabled(true);
             }
         }
     }

@@ -33,6 +33,7 @@ public class Simulation {
         boxes = new ArrayList<Box>();
 
         //Set start values according to research
+        /*
         packages.add(new Package(4));
         packages.add(new Package(8));
         packages.add(new Package(5));
@@ -42,6 +43,13 @@ public class Simulation {
         packages.add(new Package(1));
         packages.add(new Package(4));
         packages.add(new Package(2));
+        packages.add(new Package(2));
+        */
+        packages.add(new Package(5));
+        packages.add(new Package(3));
+        packages.add(new Package(2));
+        packages.add(new Package(2));
+        packages.add(new Package(3));
         packages.add(new Package(2));
         log = new Log();
         generateCode();

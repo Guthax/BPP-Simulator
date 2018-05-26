@@ -86,26 +86,13 @@ public class AlgorithmSelectionPanel extends JPanel {
 
         //Updates the radiobuttons if the amount of packages inside the simulation is > 10, this is because jurrias takes too long for > 10 packages
         if (SimulationHandler.simulation.getPackages().size() > 10) {
-            //Checks the amount of cores to set limit for jurrias
-            if(Runtime.getRuntime().availableProcessors() > 6)
-            {
-                if(SimulationHandler.simulation.getPackages().size() > 50)
-                {
-                    jurriasButton.setSelected(false);
-                    jurriasButton.setEnabled(false);
-                    firstFitRadioButton.setSelected(true);
-                    SimulationHandler.simulation.setAlgorithm(new FirstFit());
 
-                }
-            }
-            else
-            {
                 jurriasButton.setSelected(false);
                 jurriasButton.setEnabled(false);
                 firstFitRadioButton.setSelected(true);
                 SimulationHandler.simulation.setAlgorithm(new FirstFit());
 
-            }
+
 
         }
         else

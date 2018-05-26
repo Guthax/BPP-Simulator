@@ -48,7 +48,7 @@ public class NextFit extends Algorithm {
                 duration = TimeUnit.MICROSECONDS.convert(duration, TimeUnit.NANOSECONDS);//In microseconds
 
                 SimulationHandler.simulation.getLog().addEvent(
-                        new Event("Put pacage of size " + packages.get(i).getSize() + " in box " + (result.size() - 1)
+                        new Event("Put package of size " + packages.get(i).getSize() + " in box " + (result.size() - 1)
                         , duration, EventType.Step));
             }
             else
@@ -62,7 +62,7 @@ public class NextFit extends Algorithm {
                 duration = TimeUnit.MICROSECONDS.convert(duration, TimeUnit.NANOSECONDS);//In microseconds
 
                 SimulationHandler.simulation.getLog().addEvent(
-                        new Event("Put pacage of size " + packages.get(i).getSize() + " in new box "
+                        new Event("Put package of size " + packages.get(i).getSize() + " in new box "
                                 , duration, EventType.Step));
             }
 
