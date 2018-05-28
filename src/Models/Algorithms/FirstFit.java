@@ -57,7 +57,7 @@ public class FirstFit extends Algorithm {
 
             }
             SimulationHandler.simulation.getLog().addEvent(
-                    new Event("Put pacage of size " + packages.get(i).getSize() + " in box " + (result.size() - 1)
+                    new Event("Put package of size " + packages.get(i).getSize() + " in box " + (result.size() - 1)
                             , duration, EventType.Step));
         }
         return result;

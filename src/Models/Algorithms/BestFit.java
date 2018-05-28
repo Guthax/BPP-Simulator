@@ -35,6 +35,7 @@ public class BestFit extends Algorithm {
 
         for(int i = 0; i < packages.size(); i++)
         {
+            startTime = System.nanoTime();
 
             result.sort(Comparator.comparing(Box::getSumOfPackages));
 
@@ -57,7 +58,6 @@ public class BestFit extends Algorithm {
             }
 
             if(!doesFit) {
-                startTime = System.nanoTime();
                 Box b = new Box();
                 endTime = System.nanoTime();
                 duration = TimeUnit.MICROSECONDS.convert(endTime - startTime, TimeUnit.NANOSECONDS);//In
