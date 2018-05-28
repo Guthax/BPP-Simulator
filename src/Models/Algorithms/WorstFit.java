@@ -19,6 +19,8 @@ public class WorstFit extends Algorithm {
 
     @Override
     public ArrayList<Box> RunAlgorithm(int boxsize, ArrayList<Package> packages) {
+
+        //Create list and first box
         SimulationHandler.simulation.getLog().addEvent(new Event("Started calculating for worst fit.", 0, EventType.Step));
 
         long startTime = System.nanoTime();
@@ -30,14 +32,19 @@ public class WorstFit extends Algorithm {
         long duration = TimeUnit.MICROSECONDS.convert(endTime - startTime, TimeUnit.NANOSECONDS);//In milliseconds
         SimulationHandler.simulation.getLog().addEvent(new Event("Created first box", duration, EventType.Step));
 
+        //Sort packages
         packages.sort(Comparator.comparing(Package::getSize));
+
+        //Reverse so its in decending order
         Collections.reverse(packages);
 
         for(int i = 0; i < packages.size(); i++)
         {
+            //Sort all opened boxes
 
             startTime = System.nanoTime();
             result.sort(Comparator.comparing(Box::getSumOfPackages));
+            //Reverse so its in descending order
             Collections.reverse(result);
             endTime = System.nanoTime();
             duration = TimeUnit.MICROSECONDS.convert(endTime - startTime, TimeUnit.NANOSECONDS);//In
@@ -46,6 +53,7 @@ public class WorstFit extends Algorithm {
 
             boolean doesFit = false;
 
+            //If it fits, add to box
             for(Box box : result)
             {
 
@@ -64,6 +72,7 @@ public class WorstFit extends Algorithm {
             }
             if(!doesFit)
             {
+                //If it doesnt fit, open new box and add to that new box
                 startTime = System.nanoTime();
                 Box b = new Box();
                 endTime = System.nanoTime();

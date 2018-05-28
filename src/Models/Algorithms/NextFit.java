@@ -16,9 +16,13 @@ public class NextFit extends Algorithm {
 
     @Override
     public ArrayList<Box> RunAlgorithm(int boxsize, ArrayList<Package> packages) {
+
+
         SimulationHandler.simulation.getLog().addEvent(new Event("Started calculating for next fit.", 0, EventType.Step));
 
         long startTime = System.nanoTime();
+
+        //Creates list and first box
         ArrayList<Box> result = new ArrayList<Box>();
         result.add(new Box());
         long endTime = System.nanoTime();
@@ -30,6 +34,7 @@ public class NextFit extends Algorithm {
         for(int i = 0; i < packages.size(); i++)
         {
             startTime = System.nanoTime();
+            //If its not the first package then check if its fits in the last opened box
             int boxIndex;
             if(i == 0) {
                 boxIndex = 0;
@@ -39,6 +44,7 @@ public class NextFit extends Algorithm {
                 boxIndex = (i - 1);
             }
 
+            //If it fits then add the package to the last opened box
             if(((HelperMethods.sumOfPackageList(result.get(result.size() - 1).getPackages()) + packages.get(i).getSize()) <= SimulationHandler.simulation.getBoxSize()))
             {
                 result.get(result.size() - 1).addPackage(packages.get(i));
@@ -53,6 +59,7 @@ public class NextFit extends Algorithm {
             }
             else
             {
+                //If it doesnt fit, open a new box and add the package.
                 Box b = new Box();
                 b.addPackage(packages.get(i));
                 result.add(b);
@@ -67,25 +74,6 @@ public class NextFit extends Algorithm {
             }
 
         }
-        /*
-        while(packages.size() > 0)
-        {
-            int boxIndex = counter - 1;
-            if(counter <= 0) {
-                boxIndex = counter;
-            }
-            if((HelperMethods.sumOfPackageList(result.get(boxIndex).getPackages()) + packages.get(0).getSize()) <= SimulationHandler.simulation.getBoxSize())
-            {
-                result.get(boxIndex).addPackage(packages.get(0));
-            }
-            else
-            {
-                Box b = new Box();
-                b.addPackage(packages.get(0));
-                result.add(b);
-            }
-            packages.remove(0);
-        }*/
         return result;
     }
 

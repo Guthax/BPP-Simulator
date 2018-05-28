@@ -44,13 +44,16 @@ public class Jurrias extends Algorithm {
         int boxSize = SimulationHandler.simulation.getBoxSize();
 
 
+        //Calculates possible combinations by dividing by the boxsize
         HashMap<Integer, Integer> amountOfcombinations = new HashMap<>();
 
         int totalPackages = Math.round((float)HelperMethods.sumOfPackageList(packages));
 
+        //Reverses the packages so its descending
         packages.sort(comparing(Package::getSize));
         Collections.reverse(packages);
 
+        //Calculates time it took to sort and adds it to log
         long endTime = System.nanoTime();
 
         long duration = endTime - startTime;
@@ -59,28 +62,27 @@ public class Jurrias extends Algorithm {
 
         while(totalPackages > 0 && boxSize > 1)
         {
+            //Calculates possible combinations by dividing by the boxsize
             startTime = System.nanoTime();
+
+            //If the functions is recursively run 3 or more times
             if(desperateCounter > 3) {
 
                 while (!doesPackageWithSizeExist(boxSize, packages) && boxSize > 1) {
                     boxSize--;
                 }
             }
+
+
             double amount = Math.floor(Double.parseDouble(Float.toString((float)totalPackages / (float)boxSize)));
             totalPackages -= amount * boxSize;
-            //int max = packages.stream().max(comparing(Package::getSize)).get().getSize();
-            /*
-            if(!(boxSize > max)) {
-                if (amount != 0) {
-                    amountOfcombinations.put(boxSize, (int) (amount));
-                }
-            }
-            */
+
             if (amount != 0) {
                 amountOfcombinations.put(boxSize, (int) (amount));
             }
             boxSize--;
 
+            //Add to log
             endTime = System.nanoTime();
 
             duration = endTime - startTime;
@@ -90,6 +92,7 @@ public class Jurrias extends Algorithm {
 
        Iterator it = amountOfcombinations.entrySet().iterator();
 
+        //Try to find combination of packages so the calculated amount of combinations is met
         packageSizes = packages.stream().map(p -> p.getSize()).collect(Collectors.toList());
         while (it.hasNext()) {
             startTime = System.nanoTime();
@@ -100,12 +103,13 @@ public class Jurrias extends Algorithm {
             deletedNumbers = false;
             sum_up((ArrayList<Integer>) packageSizes, target);
 
-            //res.add(sum_up(new ArrayList<Integer>(Arrays.asList(numbers)),Integer.parseInt(pair.getKey().toString())));
 
             it.remove(); // avoids a ConcurrentModificationException8
 
             endTime = System.nanoTime();
 
+
+            //Add to log
             duration = endTime - startTime;
             duration = TimeUnit.MICROSECONDS.convert(duration, TimeUnit.NANOSECONDS);//In milliseconds
             SimulationHandler.simulation.getLog().addEvent(new Event("Found a combination of boxes that add up to " + target, duration, EventType.Step));
@@ -114,6 +118,7 @@ public class Jurrias extends Algorithm {
 
         it = combinationsOfNumbers.entrySet().iterator();
 
+        //Adds package to box if combination is met
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry)it.next();
 
@@ -133,6 +138,7 @@ public class Jurrias extends Algorithm {
 
                     startTime = System.nanoTime();
 
+                    //Gets the package that is needed to fill combination and adds it to the box.
                     Package x  = packages.stream()
                             .filter(s -> s.getSize() == i)
                             .findAny().orElse(null);
@@ -147,23 +153,19 @@ public class Jurrias extends Algorithm {
                     }
                 }
                 if(box.getPackages().size() > 0) {
+                    //If all packages are placed in the box, then add the box to result
                     result.add(box);
                 }
-                //Optional<Package> x  = packages.stream()
-                //        .filter(s -> s.getSize() == 2)
-                //        .findAny();
-               // box.addPackage(packages.);
             }
-            //res.add(sum_up(new ArrayList<Integer>(Arrays.asList(numbers)),Integer.parseInt(pair.getKey().toString())));
 
             it.remove(); // avoids a ConcurrentModificationException
         }
 
+        //If there are packages that are not in the box, recursively run this function again.
         while(packages.size() > 0)
         {
             desperateCounter++;
             result.addAll(RunAlgorithm(SimulationHandler.simulation.getBoxSize(), packages));
-            //result = new FirstFit().RunAlgorithm(SimulationHandler.simulation.getBoxSize(), packages);
         }
 
         if(packages.size() == 0)
@@ -174,6 +176,7 @@ public class Jurrias extends Algorithm {
     }
 
     private void sum_up_recursive(ArrayList<Integer> numbers, int target, ArrayList<Integer> partial) {
+        //Finds combination of packages that add up to target
         int s = 0;
         for (int x: partial) s += x;
         if (s == target) {
@@ -197,9 +200,6 @@ public class Jurrias extends Algorithm {
                         deletedNumbers = true;
                     }
                 }
-                System.out.println("Tets");
-                //s = 0;
-                //packageSizes.removeAll(partial);
             }
         }
 
@@ -211,7 +211,6 @@ public class Jurrias extends Algorithm {
             for (int j=i+1; j<numbers.size();j++) remaining.add(numbers.get(j));
             ArrayList<Integer> partial_rec = new ArrayList<Integer>(partial);
             partial_rec.add(n);
-            //packageSizes.remove(partial);
             sum_up_recursive(remaining,target,partial_rec);
         }
     }
@@ -219,6 +218,7 @@ public class Jurrias extends Algorithm {
         sum_up_recursive(numbers,target,new ArrayList<Integer>());
     }
 
+    //Checks if package with a certain size exists in a collection of packages
     private boolean doesPackageWithSizeExist(int size, ArrayList<Package> packages)
     {
         for(Package p : packages)
