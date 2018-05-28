@@ -72,8 +72,8 @@ public class WorstFit extends Algorithm {
             }
             if(!doesFit)
             {
-                //If it doesnt fit, open new box and add to that new box
                 startTime = System.nanoTime();
+                //If it doesnt fit, open new box and add to that new box
                 Box b = new Box();
                 endTime = System.nanoTime();
                 duration = TimeUnit.MICROSECONDS.convert(endTime - startTime, TimeUnit.NANOSECONDS);//In
@@ -82,7 +82,6 @@ public class WorstFit extends Algorithm {
                         new Event("Created new box"
                                 , duration, EventType.Step));
 
-                startTime = System.nanoTime();
                 b.addPackage(packages.get(i));
                 result.add(b);
                 endTime = System.nanoTime();
