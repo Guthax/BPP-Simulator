@@ -1,4 +1,4 @@
-# Bin Packing Problem-Simulator
+# Bin Packing Problem Simulator
 
 
 Simulator that simules Bin Packing Problem solving techniques. The algorithmes can be tested and compared. Results can be exported to a .txt file.
